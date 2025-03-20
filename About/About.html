@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quality Assurance</title>
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="aboutstyles.css">
+</head>
+<script>
+  function showDescription(id) {
+      document.querySelectorAll('.description').forEach(desc => desc.style.display = 'none');
+      document.getElementById(id).style.display = 'block';
+  }
+</script>
+<body>
+  <div class="header">
+    <img src="../logo.png" alt="Quality Assurance Logo" class="logo" />
+    <!-- Navigation Menu -->
+    <div class="nav">
+      <div class="dropdown">
+        <a href="../index.html">HOME</a>
+      </div>
+      <div class="dropdown">
+        <a href="About.html">ABOUT US</a>
+        <div class="dropdown-menu">
+          <a href="About.html#about-qa">About QA Dept.</a>
+          <a href="About.html#organization">Organization</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="../QMS/QMS.html">QMS</a>
+        <div class="dropdown-menu">
+          <a href="../QMS/QMS.html">History of QMS</a>
+          <a href="../QMS/QMS.html">Fundamental Concepts</a>
+          <a href="../QMS/QMS.html">QMS Principles</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="../ISO 29001 Standard/ISO 29001 Standard.html">ISO 29001 STANDARD</a>
+        <div class="dropdown-menu">
+          <a href="../ISO 29001 Standard/ISO 29001 Standard.html">About ISO 29001</a>
+          <a href="../ISO 29001 Standard/ISO 29001 Standard.html">ISO 29001 Contents</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="../Updates/Updates.html">UPDATES</a>
+        <div class="dropdown-menu">
+          <a href="../Updates/Updates.html">Newsletter</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="../Others/Others.html">OTHERS</a>
+        <div class="dropdown-menu">
+          <a href="../Others/Others.html">Calendar of Activities</a>
+        </div>
+      </div>
+    </div>
+    <!-- Search Bar -->
+    <div class="search-container">
+      <input type="text" placeholder="Search" />
+      <img src="../search-icon.png" alt="Search" class="search-icon" />
+    </div>
+  </div>
+  <!-- Banner Section -->
+<section id="about-qa">
+  <div class="banner">
+    <div class="image-section">
+      <img src="background_02.png" alt="Group discussion" />
+    </div>
+    <div class="aboutqa-section">
+      <h1>ABOUT QA</h1><br><br>
+      <p>The <strong>Quality Assurance (QA) Department</strong> is integral to the implementation and maintenance
+         of a Quality Management System (QMS) based on ISO 9000:2015 and its quality management principles.
+         We ensure that processes are designed and controlled to consistently meet <strong>customer and legal
+         requirements, and organizational objectives</strong>. By emphasizing process efficiency,
+         evidence-based decision-making, and continual improvement, we help the organization enhance product
+         and service quality, minimize risks, and drive operational excellence.</p><br>
+
+      <p>Guided by the QMS principles, the QA Department fosters a culture of <strong>customer focus, leadership,
+         engagement of people, and relationship management</strong>. We ensure that the quality policy and quality objectives
+         to are effectively communicated and integrated into our business operations. Through a <strong>systematic approach
+         quality assurance</strong>, including audits, corrective actions, and performance monitoring, <strong>QA supports
+         the organization's commitment to continuous improvement and long-term success</strong>.</p><br>
+    </div>
+  </div>
+</section>
+<section id="organization">
+  <div class="org-heading">
+    <h1>MEET QA</h1>
+  </div>
+  <div class="team-container">
+    <div class="member" onclick="showDescription('Department Leader')">
+        <img src="Bats.png" alt="Department Leader">
+        <p class="description" id="Department Leader"><strong>Department Leader</strong><br><br>
+          Responsible for overseeing the department operations.</p>
+        <p class="member-name">BATS</p>
+    </div>
+      <!-- 9 Department Members -->
+      <div class="member" onclick="showDescription('member1')">
+        <img src="Ryan.png" alt="Member 1">
+        <p class="description" id="member1"><strong>QA Member</strong><br><br>
+          Work according to DL instructions & support DL.</p>
+        <p class="member-name">RYAN</p>
+      </div>
+      <div class="member" onclick="showDescription('member2')">
+        <img src="Ivy.png" alt="Member 2">
+        <p class="description" id="member2"><strong>QA Member</strong><br><br>
+          Work according to DL instructions & support DL.</p>
+        <p class="member-name">IVY</p>
+      </div>
+      <div class="member" onclick="showDescription('member3')">
+        <img src="Tin.png" alt="Member 3">
+        <p class="description" id="member3"><strong>QA Member</strong><br><br>
+          Work according to DL instructions & support DL.</p>
+        <p class="member-name">TIN</p>
+      </div>
+      <div class="member" onclick="showDescription('member4')">
+        <img src="Roan.png" alt="Member 4">
+        <p class="description" id="member4"><strong>QA Member</strong><br><br>
+          Work according to DL instructions & support DL.</p>
+        <p class="member-name">ROAN</p>
+      </div>
+      <div class="member" onclick="showDescription('member5')">
+        <img src="Carlo.png" alt="Member 5">
+         <p class="description" id="member5"><strong>QA Member</strong><br><br>
+          Work according to DL instructions & support DL.</p>
+         <p class="member-name">CARLO</p>
+      </div>
+      <div class="member" onclick="showDescription('member6')">
+        <img src="Roxette.png" alt="Member 6">
+         <p class="description" id="member6"><strong>QA Member</strong><br><br>
+          Work according to DL instructions & support DL.</p>
+         <p class="member-name">ROXETTE</p>
+      </div>
+      <div class="member" onclick="showDescription('member7')">
+        <img src="Michelle.png" alt="Member 7">
+        <p class="description" id="member7"><strong>QA Member</strong><br><br>
+          Work according to DL instructions & support DL.</p>
+        <p class="member-name">MICHELLE</p>
+      </div>
+  </div>
+</section>
+  <!-- Footer -->
+  <div class="footer">
+    <div class="footer-column">
+      <a href="About.html"><h3>About US</h3></a>
+      <a href="About.html">About QA Dept.</a>
+      <a href="About.html">Organization</a>
+    </div>
+    <div class="footer-column">
+      <a href="../ISO 29001 Standard/ISO 29001 Standard.html"><h3>ISO 29001 Standard</h3></a>
+      <a href="../ISO 29001 Standard/ISO 29001 Standard.html">About ISO 29001</a>
+      <a href="../ISO 29001 Standard/ISO 29001 Standard.html">ISO 29001 Contents</a>
+    </div>
+    <div class="footer-column">
+      <a href="../QMS/QMS.html"><h3>QMS</h3></a>
+      <a href="../QMS/QMS.html">History of QMS</a>
+      <a href="../QMS/QMS.html">Fundamental Concepts</a>
+      <a href="../QMS/QMS.html">QMS Principles</a>
+    </div>
+    <div class="footer-column">
+      <a href="../Updates/Updates.html"><h3>Updates</h3></a>
+      <a href="../Updates/Updates.html">Newsletter</a>
+    </div>
+    <div class="footer-column">
+      <a href="../Others/Others.html"><h3>Others</h3></a>
+      <a href="../Others/Others.html">Calendar of Activities</a>
+    </div>
+    <div class="footer-column">
+      <h3>Help</h3>
+      <a href="#">Contact Us</a>
+      <p>Local: 301/ 315/ 316</p>
+    </div>
+    <div class="footer-right">
+      <img src="../logo.png" alt="QA Logo" />
+    </div>
+  </div>
+  <script>
+    document.addEventListener("click", function(event) {
+        // Hide all descriptions when clicking anywhere on the page
+        document.querySelectorAll('.description').forEach(desc => desc.style.display = 'none');
+    });
+    
+    function showDescription(id) {
+        // Prevent immediate hiding when clicking the image
+        event.stopPropagation();
+    
+        // Hide all descriptions first
+        document.querySelectorAll('.description').forEach(desc => desc.style.display = 'none');
+    
+        // Show the clicked description
+        document.getElementById(id).style.display = 'block';
+    }
+    
+    // Optional: Hide the description when the mouse leaves the image
+    document.querySelectorAll('.member img').forEach(img => {
+        img.addEventListener("mouseleave", function() {
+            document.querySelectorAll('.description').forEach(desc => desc.style.display = 'none');
+        });
+    });
+    </script>
+</body>
+
+</html>
